@@ -1,0 +1,25 @@
+/* Styles généraux et thème "fantasy" sobre */
+:root{
+    --bg:#f7f5f0;
+    --accent:#37474f;
+    --muted:#7b6f64;
+    --gold:#c49a4a;
+}
+*{box-sizing:border-box}
+body{font-family:Georgia, 'Times New Roman', serif;background:var(--bg);color:#222;margin:0}
+.container{max-width:1000px;margin:0 auto;padding:1rem}
+.site-header{background:linear-gradient(180deg,#fbf8f2,#efebe4);border-bottom:4px solid var(--gold);padding:1.5rem 0}
+.site-header h1{margin:0;font-size:1.7rem;color:var(--accent)}
+.tagline{margin:0.3rem 0;color:var(--muted)}
+.main-nav{margin-top:0.7rem}
+.main-nav a{margin-right:1rem;text-decoration:none;color:var(--accent);font-weight:bold}
+.hero{padding:2rem 0}
+.hero h2{font-family: 'Palatino Linotype', 'Book Antiqua', serif;font-size:1.6rem}
+.btn{display:inline-block;padding:0.6rem 1rem;border-radius:6px;background:var(--accent);color:#fff;text-decoration:none}
+.quick-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1.5rem}
+.quick-links article{background:#fff;padding:1rem;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.06)}
+.site-footer{background:#2b2b2b;color:#ddd;padding:1rem;margin-top:2rem}
+.site-footer p{margin:0;text-align:center}
+.contact-page a{color:var(--accent);text-decoration:underline}
+/* responsive */
+@media(max-width:600px){.site-header h1{font-size:1.2rem}.main-nav{display:flex;flex-wrap:wrap}}
